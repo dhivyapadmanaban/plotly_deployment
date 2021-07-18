@@ -96,9 +96,6 @@ function buildCharts(sample) {
 
     // **** DELIVERABLE 2 ****
 
-    console.log ("Before bubble chart");
-
-
     // 1. Create the trace for the bubble chart.
     var trace1 = {
         x : otu_ids,
@@ -119,8 +116,6 @@ function buildCharts(sample) {
         xaxis: { title: "OTU ID" }
         //hovermode: "closest"
       };
-  
-    console.log ("After bubble chart");
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
