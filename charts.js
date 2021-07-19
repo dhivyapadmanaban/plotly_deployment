@@ -111,7 +111,8 @@ function buildCharts(sample) {
         marker: {
           size : sample_values,
           color : otu_ids,
-          colorscale: 'YlGnBu'
+          //colorscale: 'YlGnBu'
+          colorscale: 'Bluered'
         }
       };
   
@@ -121,7 +122,7 @@ function buildCharts(sample) {
     var bubbleLayout = {
         title : "Bacteria Cultures Per Sample",
         xaxis: { title: "OTU ID" }
-        //hovermode: "closest"
+        hovermode: "closest"
       };
 
 
