@@ -110,7 +110,8 @@ function buildCharts(sample) {
         mode : "markers",
         marker: {
           size : sample_values,
-          color : otu_ids 
+          color : otu_ids,
+          colorscale: 'YlGnBu'
         }
       };
   
@@ -156,9 +157,15 @@ function buildCharts(sample) {
   
   // 5. Create the layout for the gauge chart.
   var gaugeLayout = { 
-    width: 500,
-    height: 400,
-    margin: { t: 25, r: 25, l: 25, b: 25 }
+        title: {
+          text: `<b>Belly Button Washing Frequency</b><br>Scrubs per Week`,
+          font: {
+              size: 18,
+              color: 'rgb(34,94,168)'
+          },
+      },
+      height: 500,
+      width: 500
       };
  
 
