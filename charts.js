@@ -111,8 +111,9 @@ function buildCharts(sample) {
         marker: {
           size : sample_values,
           color : otu_ids,
-          //colorscale: 'YlGnBu'
-          colorscale: 'Bluered'
+          //colorscale: 'YlGnBu'  
+          colorscale: 'Earth',
+          type: 'heatmap'
         }
       };
   
@@ -122,7 +123,7 @@ function buildCharts(sample) {
     var bubbleLayout = {
         title : "Bacteria Cultures Per Sample",
         xaxis: { title: "OTU ID" }
-        hovermode: "closest"
+        //hovermode: "closest"
       };
 
 
@@ -138,7 +139,6 @@ function buildCharts(sample) {
     type: "indicator",
     value: wash_freq,
     mode: "gauge+number",
-    title:  { text: "Belly Button Washing Frequency", font: { size: 24 } },
     gauge: {
       axis: { range: [0, 10], tickwidth: 2, tickcolor: "black" },
       bar: { color: "black" },
