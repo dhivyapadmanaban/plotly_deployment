@@ -20,15 +20,19 @@ The ask was to retrieve test subject demographics, and draw a bar chart, bubble 
 - Get required data for plotting, including sample_values, otu_ids and otu_labels which were used to create a trace and plot the bar chart.
 - Since the task was to only plot the top 10 values, the three arrays were sliced and reversed to display the chart as below.
 
-**BAR CHART**
+
 ![image](https://user-images.githubusercontent.com/83181834/126884337-697dffc5-8b1a-4dce-8f90-ba09e2dfb26e.png)
 
-**BUBBLE CHART**
+
+
 ![image](https://user-images.githubusercontent.com/83181834/126884339-a4223dfc-73cb-4b84-acec-16b0dbe724f3.png)
 
-**GAUGE CHART**
+
+
 ![image](https://user-images.githubusercontent.com/83181834/126884345-9aa808d2-09d1-410d-ae07-52703c1b320a.png)
 
 
-**BELLY BUTTON BIODIVERSITY DASHBOARD**
+
+### DASHBOARD
+
 ![image](https://user-images.githubusercontent.com/83181834/126884332-680a0fc0-918b-43ae-876e-7c445d4bd116.png)
