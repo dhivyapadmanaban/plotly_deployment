@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 .jumbotron {
   background-image: url("../images/bact.jpg") ;
    background-size: cover;
@@ -23,16 +21,3 @@ hr{
   height:5px;
   background: lightgrey;
 }
-=======
-  .jumbotron {
-    background-image: url("../images/bacteria.jpg");
-     background-size: cover;
-     text-align: center;
-    }
-h1 {
-  color: white;
-}
-p {
-  color: white;
-}
->>>>>>> 6eb5f7f96f65fcc9692862e94085b279ec6b6224
