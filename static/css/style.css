@@ -1,9 +1,24 @@
-body {
-    color: #141313;
-    background-image: url("../images/background.jpg");
+
+.jumbotron {
+  background-image: url("../images/bact.jpg") ;
+   background-size: cover;
+   text-align: center;
+   text
   }
-  .jumbotron {
-    background-image: url("../images/bacteria.jpg");
-    background-size: 100% 100%;
-    text-align: center;
-  }
+  
+#selDataset {
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+}
+p {
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+}
+.belly-bg {
+  background-color: rgb(34,94,168)!important
+}
+hr{ 
+  width:100%;
+  height:5px;
+  background: lightgrey;
+}

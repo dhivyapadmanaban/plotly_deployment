@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("samples.json").then((data) => {
+  d3.json("data/samples.json").then((data) => {
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
@@ -32,7 +32,7 @@ function optionChanged(newSample) {
 
 // Demographics Panel 
 function buildMetadata(sample) {
-  d3.json("samples.json").then((data) => {
+  d3.json("data/samples.json").then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
@@ -56,7 +56,7 @@ function buildMetadata(sample) {
 // 1. Create the buildCharts function.
 function buildCharts(sample) {
   // 2. Use d3.json to load and retrieve the samples.json file 
-  d3.json("samples.json").then((data) => {
+  d3.json("data/samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
     var sampleInfo = data.samples;  
     var metadata = data.metadata;
@@ -95,6 +95,11 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title : "Top 10 Bacteria Culture Found",
+      titlefont: {
+        family: 'Arial, sans-serif',
+        size: 18,
+        color: 'rgb(34,94,168)'
+      }
     };
 
     // 10. Use Plotly to plot the data with the layout. 
@@ -122,6 +127,11 @@ function buildCharts(sample) {
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
         title : "Bacteria Cultures Per Sample",
+        titlefont: {
+          family: 'Arial, sans-serif',
+          size: 18,
+          color: 'rgb(34,94,168)'
+        },
         xaxis: { title: "OTU ID" }
         //hovermode: "closest"
       };
@@ -162,6 +172,7 @@ function buildCharts(sample) {
           text: `<b>Belly Button Washing Frequency</b><br>Scrubs per Week`,
           font: {
               size: 18,
+              family: 'Arial, sans-serif',
               color: 'rgb(34,94,168)'
           },
       },
